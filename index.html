@@ -3,12 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="hello.css">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>File Browser</title>
 </head>
 <body>
-    <h1>My Files</h1>
-    <p>This is a file browser</p>
-    
+        <h1>My Files</h1>
+        <p>This is a file browser</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>File icon</th>
+                    <th>File name</th>
+                    <th>File type</th>
+                    <th>File size</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa-solid fa-file-code"></i></td>
+                    <td><a href="hello.html">hello.html</a></td>
+                    <td>HTML</td>
+                    <td>104 bytes</td>
+                    <td>Basic HTML page with 'Hello, world!'</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-file-image"></i></td>
+                    <td><a href="hello.jpeg">hello.jpeg</a></td>
+                    <td>JPEG</td>
+                    <td>426 bytes</td>
+                    <td>1x1 pixel JPEG image</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-file-lines"></i></td>
+                    <td><a href="hello.json">hello.json</a></td>
+                    <td>JSON</td>
+                    <td>32 bytes</td>
+                    <td>Simple JSON with a message</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-file-pdf"></i></td>
+                    <td><a href="hello.pdf">hello.pdf</a></td>
+                    <td>PDF</td>
+                    <td>545 bytes</td>
+                    <td>Minimal PDF with 'Hello, world!'</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-file-lines"></i></td>
+                    <td><a href="hello.txt">hello.txt</a></td>
+                    <td>TXT</td>
+                    <td>14 bytes</td>
+                    <td>Plain text: 'Hello, world!'</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>Text and HTML files display their content directly in the browser.</li>
+            <li>PDF files open in a built-in viewer, allowing navigation and zoom.</li>
+            <li>Image files (JPEG) are shown as pictures, not as raw data.</li>
+        </ul>
 </body>
 </html>
